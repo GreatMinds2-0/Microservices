@@ -15,15 +15,14 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/api/v1/stores", produces = "application/json")
-public class StoresController {
 
+public class StoresController {
     private final StoreService storeService;
     private final StoreMapper mapper;
     public StoresController(StoreService storeService, StoreMapper mapper){
         this.storeService = storeService;
         this.mapper = mapper;
     }
-
     @GetMapping
     public Page<StoreResource> getAllStore(Pageable pageable){
         return mapper.modelListPage(storeService.getAll(), pageable);
@@ -31,13 +30,11 @@ public class StoresController {
     @GetMapping("{storeId}")
     public StoreResource getStoreById(@PathVariable Long storeId){
         return mapper.toResource(storeService.getById(storeId));
-
     }
     @PostMapping
     public StoreResource createStore(@Valid @RequestBody CreateStoreResource resource){
         return mapper.toResource(storeService.create(mapper.toModel(resource)));
     }
-
     @DeleteMapping("{storeId}")
     public ResponseEntity<?> deleteStore(@PathVariable Long storeId){
         return storeService.delete(storeId);
