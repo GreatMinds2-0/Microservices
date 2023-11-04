@@ -2,10 +2,7 @@ package com.urprovider.sales.domain.model.entity;
 
 
 import com.urprovider.sales.shared.domain.model.BaseModel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -17,6 +14,7 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @Entity
 @Table(name = "reviews")
+@Builder
 public class Review extends BaseModel {
 
 

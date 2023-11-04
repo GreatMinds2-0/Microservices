@@ -3,10 +3,7 @@ package com.urprovider.users.store.domain.model.entity;
 
 import com.fasterxml.jackson.databind.deser.SettableBeanProperty;
 import com.urprovider.users.shared.domain.model.BaseModel;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -21,6 +18,7 @@ import java.util.List;
 @AllArgsConstructor
 @Entity
 @Table(name = "stores")
+@Builder
 public class Store extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
