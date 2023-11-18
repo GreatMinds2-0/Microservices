@@ -15,4 +15,6 @@ public interface ProductService {
     ResponseEntity<?> delete(Long productId);
 
     Product create(Product product);
+
+    List<Product> getByIdSupplier(Long supplierId);
 }

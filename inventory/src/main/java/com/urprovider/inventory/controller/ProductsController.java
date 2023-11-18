@@ -1,6 +1,7 @@
 package com.urprovider.inventory.controller;
 
 
+import com.urprovider.inventory.domain.model.entity.Product;
 import com.urprovider.inventory.domain.service.ProductService;
 import com.urprovider.inventory.mapping.ProductMapper;
 import com.urprovider.inventory.resource.CreateProductResource;
@@ -14,8 +15,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-@EnableEurekaClient
-@EnableDiscoveryClient
+//@EnableEurekaClient
+//@EnableDiscoveryClient
 @RestController
 @RequestMapping(value = "/api/v1/products")
 public class ProductsController {
@@ -36,6 +37,7 @@ public class ProductsController {
     // no es necesaria este endpoint
     @PostMapping
     public ResponseEntity<ProductResource> createProduct(@RequestBody CreateProductResource resource) {
+
         return new ResponseEntity<>(mapper.toResource(productService.create(mapper.toModel(resource))), HttpStatus.CREATED);
     }
 
@@ -45,8 +47,15 @@ public class ProductsController {
         return mapper.toResource(productService.update(productId, mapper.toModel(resource)));
     }
 
-    @GetMapping("{productId}")
+    @DeleteMapping("{productId}")
     public ResponseEntity<?> deleteProduct(@PathVariable Long productId) {
         return productService.delete(productId);
     }
+
+    @GetMapping("/supplier/{supplierId}")
+    public ResponseEntity<List<Product>> getProductsBySupplier(@PathVariable Long supplierId) {
+        List<Product> products = productService.getByIdSupplier(supplierId);
+        return new ResponseEntity<>(products, HttpStatus.OK);
+    }
+
 }

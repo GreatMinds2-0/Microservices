@@ -4,7 +4,10 @@ package com.urprovider.inventory.domain.model.entity;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.urprovider.inventory.resource.ProductResource;
 import com.urprovider.inventory.shared.domain.model.BaseModel;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -17,7 +20,6 @@ import javax.validation.constraints.Size;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name = "products")
-@Builder
 public class Product extends BaseModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,6 +34,7 @@ public class Product extends BaseModel {
     private boolean available=true;
     private String description;
     private int numberOfSales=1;
+    private Long idSupplier;
 
 
     public static Product from(ProductResource productResource){

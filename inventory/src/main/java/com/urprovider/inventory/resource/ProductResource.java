@@ -17,4 +17,5 @@ public class ProductResource {
     private boolean available;
     private String description;
     private int numberOfSales;
+    private Long idSupplier;
 }

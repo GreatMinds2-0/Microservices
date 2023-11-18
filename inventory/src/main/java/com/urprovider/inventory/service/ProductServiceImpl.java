@@ -58,14 +58,27 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public ResponseEntity<?> delete(Long productId) {
         return productRepository.findById(productId).map(product -> {
-                    productRepository.delete(product);
-                    return ResponseEntity.ok().build(); })
+            productRepository.delete(product);
+            return ResponseEntity.ok().build(); })
                 .orElseThrow(() -> new ResourceNotFoundException(ENTITY, productId));
     }
 
     @Override
     public Product create(Product product){
+        System.out.println("Fecha de creación antes de guardar: " + product.getCreatedAt());
+        Set<ConstraintViolation<Product>> violations= validator.validate(product);
+        if(!violations.isEmpty())
+            throw new ResourceValidationException(ENTITY, violations);
 
         return productRepository.save(product);
+    }
+
+    @Override
+    public List<Product> getByIdSupplier(Long supplierId) {
+        List<Product> products = productRepository.findByIdSupplier(supplierId);
+        if (products.isEmpty()) {
+            throw new ResourceNotFoundException("Product"+ "No products found for supplier with id: " + supplierId);
+        }
+        return products;
     }
 }

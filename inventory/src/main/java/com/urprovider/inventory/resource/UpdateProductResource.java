@@ -29,4 +29,5 @@ public class UpdateProductResource {
     private int numberOfSales;
 
     private boolean available;
+    private Long idSupplier;
 }

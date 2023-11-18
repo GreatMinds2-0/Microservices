@@ -18,6 +18,6 @@ public class CreateProductResource {
     private String image;
     private boolean available;
     private String description;
-
+    private Long idSupplier;
 
 }
