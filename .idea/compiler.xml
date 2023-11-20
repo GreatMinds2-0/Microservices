@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="config-service" target="13" />
       <module name="gateway-service" target="13" />
     </bytecodeTargetLevel>
   </component>
