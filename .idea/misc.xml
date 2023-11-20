@@ -4,7 +4,6 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/config-service" />
     <file type="web" url="file://$PROJECT_DIR$/gateway-service" />
-    <file type="web" url="file://$PROJECT_DIR$/registry-service" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -12,6 +11,7 @@
         <option value="$PROJECT_DIR$/sales/pom.xml" />
         <option value="$PROJECT_DIR$/users/pom.xml" />
         <option value="$PROJECT_DIR$/eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/payment/pom.xml" />
         <option value="$PROJECT_DIR$/Shipping/pom.xml" />
         <option value="$PROJECT_DIR$/inventory/pom.xml" />
