@@ -1,0 +1,16 @@
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\domain\service\ProductService.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\resource\CreateProductResource.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\domain\model\entity\Product.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\mapping\MappingConfiguration.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\shared\mapping\EnhancedModelMapper.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\mapping\ProductMapper.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\domain\persistence\ProductRepository.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\InventoryApplication.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\shared\exception\ResourceNotFoundException.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\service\ProductServiceImpl.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\shared\domain\model\BaseModel.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\controller\ProductsController.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\resource\ProductResource.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\shared\exception\ResourceValidationException.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\shared\mapping\MappingConfiguration.java
+C:\Users\uset\Documents\GestionProductos\MicroservicesGreatMinds\inventory\src\main\java\com\urprovider\inventory\resource\UpdateProductResource.java
