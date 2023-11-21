@@ -45,12 +45,6 @@ public class StoreServiceImpl implements StoreService {
         Set<ConstraintViolation<Store>> violations = validator.validate(store);
         if (!violations.isEmpty())
             throw new ResourceValidationException(ENTITY, violations);
-        // Email Uniqueness validation
-        Store storeWithEmail = storeRepository.findByEmail(store.getEmail());
-        if (storeWithEmail != null)
-            throw new ResourceValidationException(ENTITY,
-                    "A store with the same email already exist.");
-
         return storeRepository.save(store);
     }
 

@@ -36,11 +36,4 @@ public class Product extends BaseModel {
     private int numberOfSales=1;
     private Long idSupplier;
 
-
-    public static Product from(ProductResource productResource){
-        Product product=new Product();
-        product.setCategory(productResource.getCategory());
-        return product;
-
-    }
 }
