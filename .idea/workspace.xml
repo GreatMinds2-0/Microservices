@@ -4,34 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e1e551d3-4255-41ca-88ac-81c4cd7a2c0b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e1e551d3-4255-41ca-88ac-81c4cd7a2c0b" name="Changes" comment="feat: config data">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/ShippingApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/ShippingApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/domain/model/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/domain/model/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/exception/ResourceValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/exception/ResourceValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/mapping/EnhancedModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/mapping/EnhancedModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shared/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/controller/ShipmentController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/controller/ShipmentController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/entity/Shipment$ShipmentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/entity/Shipment$ShipmentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/entity/Shipment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/entity/Shipment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/persistence/ShipmentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/persistence/ShipmentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/service/ShipmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/domain/service/ShipmentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/mapping/ShipmentMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/mapping/ShipmentMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/resource/CreateShipmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/resource/CreateShipmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/resource/ShipmentResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/resource/ShipmentResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/service/ShipmentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/Shipping/target/classes/com/urprovider/shipping/service/ShipmentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inventory/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inventory/target/test-classes/com/urprovider/inventory/InventoryApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/inventory/target/test-classes/com/urprovider/inventory/InventoryApplicationTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/payment/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/payment/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/PaymentApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/PaymentApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/controller/PayController.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/controller/PayController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/entity/Pay$PayBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/entity/Pay$PayBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/entity/Pay.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/entity/Pay.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/persistence/PayRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/persistence/PayRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/service/PayService.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/domain/model/service/PayService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/mapping/MappingConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/mapping/PayMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/mapping/PayMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/resource/CreatePayResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/resource/CreatePayResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/resource/PayResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/resource/PayResource.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/service/PayServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/pay/service/PayServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/domain/model/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/domain/model/BaseModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/exception/ResourceNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/exception/ResourceValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/exception/ResourceValidationException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/mapping/EnhancedModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/mapping/EnhancedModelMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/classes/com/urprovider/shared/mapping/MappingConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/payment/target/test-classes/urprovider/PaymentApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/payment/target/test-classes/urprovider/PaymentApplicationTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sales/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sales/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/SalesApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/SalesApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/controller/ReviewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/controller/ReviewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/controller/SalesOrdersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/controller/SalesOrdersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/entity/Review.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/entity/Review.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/entity/SalesOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/entity/SalesOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/persistence/ReviewRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/persistence/ReviewRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/persistence/SalesOrderRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/persistence/SalesOrderRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/service/ReviewService.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/service/ReviewService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/service/SalesOrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/domain/model/service/SalesOrderService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/ReviewMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/ReviewMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/SalesOrderMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/mapping/SalesOrderMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/CreateReviewResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/CreateReviewResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/CreateSalesOrderResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/CreateSalesOrderResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/ReviewResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/ReviewResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/SalesOrderResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/SalesOrderResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/UpdateReviewResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/resource/UpdateReviewResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/service/ReviewServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/service/ReviewServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/service/SalesOrderServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/service/SalesOrderServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/domain/model/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/domain/model/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/exception/ResourceValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/exception/ResourceValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/mapping/EnhancedModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/mapping/EnhancedModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/sales/target/classes/com/urprovider/sales/shared/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/users/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/users/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/UsersApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/UsersApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/domain/model/BaseModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/domain/model/BaseModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/exception/ResourceNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/exception/ResourceNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/exception/ResourceValidationException.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/exception/ResourceValidationException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/mapping/EnhancedModelMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/mapping/EnhancedModelMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/shared/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/controller/StoresController.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/controller/StoresController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/model/entity/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/model/entity/Store.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/persistence/StoreRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/persistence/StoreRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/service/StoreService.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/domain/service/StoreService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/mapping/StoreMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/mapping/StoreMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/CreateStoreResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/CreateStoreResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/StoreResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/StoreResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/UpdateStoreResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/resource/UpdateStoreResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/service/StoreServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/store/service/StoreServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/controller/SuppliersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/controller/SuppliersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/model/entity/Supplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/model/entity/Supplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/persistence/SupplierRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/persistence/SupplierRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/service/SupplierService.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/domain/service/SupplierService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/mapping/MappingConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/mapping/MappingConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/mapping/SupplierMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/mapping/SupplierMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/CreateSupplierResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/CreateSupplierResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/SupplierResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/SupplierResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/UpdateSupplierResource.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/resource/UpdateSupplierResource.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/service/SupplierServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/users/target/classes/com/urprovider/users/supplier/service/SupplierServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,8 +192,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1700522612382</updated>
-      <workItem from="1700522614673" duration="1289000" />
+      <workItem from="1700522614673" duration="6277000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: gateway connect into eureka and add routes">
+      <created>1700524056091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700524056091</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: delete empty files">
+      <created>1700524084572</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700524084572</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: config data">
+      <created>1700524168974</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700524168974</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,5 +231,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: gateway connect into eureka and add routes" />
+    <MESSAGE value="feat: delete empty files" />
+    <MESSAGE value="feat: config data" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: config data" />
   </component>
 </project>
