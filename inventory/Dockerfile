@@ -1,5 +1,7 @@
 FROM openjdk:17-alpine
 
+EXPOSE 8081
+
 COPY ./target/inventory-0.0.1-SNAPSHOT.jar /
 
 RUN sh -c 'touch inventory-0.0.1-SNAPSHOT.jar'

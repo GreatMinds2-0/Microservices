@@ -1,0 +1,25 @@
+version: '3'
+services:
+  eureka:
+    image: zsiegfried/urprovider
+    container_name: eureka
+    build:
+      - context: ./eureka
+      - dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+  inventory:
+    image: zsiegfried/inventory
+    container_name: inventory
+    build:
+      - context: ./inventory
+      - dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8081:8081"
