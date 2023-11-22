@@ -50,12 +50,6 @@ public class SupplierServiceImpl implements SupplierService {
         if (!violations.isEmpty())
             throw new ResourceValidationException(ENTITY, violations);
 
-        // Email Uniqueness validation
-        Optional<Supplier> supplierWithEmail = supplierRepository.findByEmail(supplier.getEmail());
-        if (supplierWithEmail.isPresent()){
-            throw new ResourceValidationException(ENTITY,
-                    "A supplier with the same email already exist.");
-        }
         return supplierRepository.save(supplier);
     }
 
@@ -67,12 +61,6 @@ public class SupplierServiceImpl implements SupplierService {
             throw new ResourceValidationException(ENTITY, violations);
 
         // Name Uniqueness validation
-        Optional<Supplier> supplierWithEmail = supplierRepository.findByEmail(request.getEmail());
-
-        if(supplierWithEmail.isPresent() && !supplierWithEmail.get().getId().equals(supplierId))
-            throw new ResourceValidationException(ENTITY,
-                    "A supplier with the same email already exists.");
-
         return null;
     }
 

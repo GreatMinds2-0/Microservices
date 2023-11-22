@@ -65,7 +65,6 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Product create(Product product){
-        System.out.println("Fecha de creación antes de guardar: " + product.getCreatedAt());
         Set<ConstraintViolation<Product>> violations= validator.validate(product);
         if(!violations.isEmpty())
             throw new ResourceValidationException(ENTITY, violations);
