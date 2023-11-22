@@ -27,11 +27,11 @@ public class PayController {
     public List<PayResource> getAllPay(){
         return mapper.modelListPage(payService.getAll());
     }
+
     @GetMapping("{payId}")
     public PayResource getPayById(@PathVariable Long payId){
         return mapper.toResource(payService.getById(payId));
     }
-
 
     @GetMapping("/supplier/{supplierId}")
     public PayResource getPayBySupplierId(@PathVariable Long supplierId){

@@ -1,19 +1,19 @@
 version: '3'
 services:
   eureka:
-    image: zsiegfried/urprovider
+    image: zsiegfried/eureka
     container_name: eureka
     build:
-      - context: ./eureka
-      - dockerfile: Dockerfile
+      context: ./eureka
+      dockerfile: Dockerfile
     ports:
       - "8761:8761"
   inventory:
     image: zsiegfried/inventory
     container_name: inventory
     build:
-      - context: ./inventory
-      - dockerfile: Dockerfile
+      context: ./inventory
+      dockerfile: Dockerfile
     links:
       - eureka
     environment:
@@ -23,3 +23,78 @@ services:
       - eureka
     ports:
       - "8081:8081"
+  gateway:
+    image: zsiegfried/gateway
+    container_name: gateway
+    build:
+      context: ./gateway
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8080:8080"
+  payment:
+    image: zsiegfried/payment
+    container_name: payment
+    build:
+      context: ./payment
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8086:8086"
+  sales:
+    image: zsiegfried/sales
+    container_name: sales
+    build:
+      context: ./sales
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8085:8085"
+  Shipping:
+    image: zsiegfried/shipping
+    container_name: shipping
+    build:
+      context: ./shipping
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8084:8084"
+  users:
+    image: zsiegfried/users
+    container_name: users
+    build:
+      context: ./users
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8082:8082"
