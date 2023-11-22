@@ -1,6 +1,5 @@
 FROM openjdk:17-alpine
-ENV PORT 8084
-EXPOSE 8084
+
 
 COPY ./target/Shipping-0.0.1-SNAPSHOT.jar /
 

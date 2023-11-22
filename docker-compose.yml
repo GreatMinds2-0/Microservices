@@ -52,7 +52,7 @@ services:
     depends_on:
       - eureka
     ports:
-      - "8086:8086"
+      - "8085:8085"
   sales:
     image: zsiegfried/sales
     container_name: sales
@@ -67,7 +67,7 @@ services:
     depends_on:
       - eureka
     ports:
-      - "8085:8085"
+      - "8083:8083"
   Shipping:
     image: zsiegfried/shipping
     container_name: shipping
