@@ -8,21 +8,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8761:8761"
-  inventory:
-    image: zsiegfried/inventory
-    container_name: inventory
-    build:
-      context: ./inventory
-      dockerfile: Dockerfile
-    links:
-      - eureka
-    environment:
-      - JAVA_OPTS=
-        -DEUREKA_SERVER=http://eureka:8761/eureka
-    depends_on:
-      - eureka
-    ports:
-      - "8081:8081"
   gateway:
     image: zsiegfried/gateway
     container_name: gateway
@@ -38,6 +23,21 @@ services:
       - eureka
     ports:
       - "8080:8080"
+  inventory:
+    image: zsiegfried/inventory
+    container_name: inventory
+    build:
+      context: ./inventory
+      dockerfile: Dockerfile
+    links:
+      - eureka
+    environment:
+      - JAVA_OPTS=
+        -DEUREKA_SERVER=http://eureka:8761/eureka
+    depends_on:
+      - eureka
+    ports:
+      - "8081:8081"
   payment:
     image: zsiegfried/payment
     container_name: payment
